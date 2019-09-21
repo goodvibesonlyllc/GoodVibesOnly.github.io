@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="styleGvoPractice.css">
+    <script src="gvoScript.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142712156-1"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/5686762f0e.js"></script>
+    <title>Good Vibes Only</title>
+</head>
+
+<body>
+        
+    <div class="modal center" id="modal">
+        <div class="payment">
+            <img src="ImagesGvo/gvoLogo.png" height="70" width="70" class="payment-image" />
+            <form id="payment-form">
+                <div id="form">
+                    <div class="form-row">
+                        <div class="StripeElement StripeElement--empty">
+                            <input id="email" type="email" placeholder="Email" required="" autocomplete="email"
+                                    class="form-row-input">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div id="card-element" class="StripeElement StripeElement--empty"></div>
+                    </div>
+                </div>
+                <div id="card-errors" role="alert"></div>
+                <div class="form-actions">
+                    <button class="form-actions-button" id="form-actions-button">Purchase &#xA3;300</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="main">
+        <header>
+            <div class="header-content">
+                <div class="header-text" data-aos="fade-in">
+                    <div class="header-text-primary">
+                        <span>The <span class="header-text-primary-bold">Good Vibes Only</span> Cyber AIO Copping Tool</span>
+                    </div>
+                    <div class="header-text-secondary">
+                        <span>
+                            Never miss another Cyber AIO drop with our specialized tool to help you get one of the best AIO bots on the market.
+                        </span>
+                    </div>
+                    <a class="header-button" id="purchase-button"><span>Practice Now!</span></a>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="stopwatch" id="a-timer">
+        <span class="timeShow text-center"></span>
+    </disv>
+    
+    </footer>
+            <script src="https://js.stripe.com/v3/"></script>
+            <!-- <script src="https://cdn.cybersole.io/scripts/purchase.js?v=76478456"></script> -->
+            <script src="gvoCode.js"></script>
+            <script>
+                var changedText = document.getElementById('form-actions-button');
+                $(changedText).bind("DOMSubtreeModified",function(){
+                    console.log("changed");
+                });
+            </script>
+</body>
+</html>
